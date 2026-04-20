@@ -5,6 +5,23 @@ You can download the weights of the pre-trained models used for portrait segment
 
 ## How to Run?
 
+# Pre-Processing
+
+**FERET:** Run `filter_feret.py` to copy FERET's frontal images to a new folder. Run `create_feret_pairs.py` to create genuine and impostor pairs with FERET's frontal images, following the pairing protocol discribed in the paper.
+
+**FRGCv2:** Since FRGCv2 contains several folders, the first step is to save all the images considered for the experiment in the same folder. Run `create_frgc_pairs.py` to create genuine and impostor pairs with FRGCv2 images, following the pairing protocol discribed in the paper.
+
+# Segmentation
++ clean FRGCv2
+
+# Face Image Quality Assessement
+
+# FR Evaluation
+
+# MAD Evaluation
+
+# Segmentation Methods Evaluation
+
 ## Citation
 
 If you use any of the code, datasets or models provided in this repository, please cite the correspondent paper:
