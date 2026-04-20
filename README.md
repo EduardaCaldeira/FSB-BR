@@ -1,7 +1,15 @@
 # This is the official repository of the paper "On the Impact of Face Segmentation-Based Background Removal on Recognition and Morphing Attack Detection" (accepted at FG 2026)
 
-## Pre-Trained Portrait Segmentation Models Download
+## Downloads
+
+# Pre-Trained Portrait Segmentation Models
 You can download the weights of the pre-trained models used for portrait segmentation in this work [here](https://github.com/hukenovs/easyportrait) (FPN + ResNet50, SegFormer-B0, BiSeNetv2, DANet, Fast SCNN and FCN + MobileNetv2) and [here](https://github.com/facebookresearch/segment-anything) (SAM).
+
+# FR Evaluation Models
+The weigths of the pre-trained FR models used in this work can be downloaded through the following links: [ElasticFace](https://github.com/fdbtrs/ElasticFace), [ArcFace](https://github.com/deepinsight/insightface/tree/master/recognition/arcface_torch), [SwinFace](https://github.com/lxq1000/SwinFace), [TransFace](https://github.com/DanJun6737/TransFace). These models should be saved inside a folder named `FR_models`
+
+# MAD Evaluation Models
+The weigths of the pre-trained MAD models used in this work can be downloaded through the following links: [SPL](https://github.com/meilfang/SPL-MAD), [MixFaceNet-MAD](https://github.com/naserdamer/SMDD-Synthetic-Face-Morphing-Attack-Detection-Development-dataset). These models should be saved inside the folders named `unsupervised_MAD` andf `supervised_MAD`, respectively.
 
 ## How to Run?
 
