@@ -5,6 +5,9 @@
 ### Pre-Trained Portrait Segmentation Models
 You can download the weights of the pre-trained models used for portrait segmentation in this work [here](https://github.com/hukenovs/easyportrait) (FPN + ResNet50, SegFormer-B0, BiSeNetv2, DANet, Fast SCNN and FCN + MobileNetv2) and [here](https://github.com/facebookresearch/segment-anything) (SAM).
 
+### Alignment Model
+The weights of the pre-trained RetinaFace can be downloaded [here](https://github.com/deepinsight/insightface/tree/master/detection/retinaface). This model should be saved inside a folder named `align`. 
+
 ### FR Evaluation Models
 The weigths of the pre-trained FR models used in this work can be downloaded through the following links: [ElasticFace](https://github.com/fdbtrs/ElasticFace), [ArcFace](https://github.com/deepinsight/insightface/tree/master/recognition/arcface_torch), [SwinFace](https://github.com/lxq1000/SwinFace), [TransFace](https://github.com/DanJun6737/TransFace). These models should be saved inside a folder named `FR_models`
 
