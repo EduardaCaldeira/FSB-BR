@@ -9,7 +9,10 @@ You can download the weights of the pre-trained models used for portrait segment
 The weigths of the pre-trained FR models used in this work can be downloaded through the following links: [ElasticFace](https://github.com/fdbtrs/ElasticFace), [ArcFace](https://github.com/deepinsight/insightface/tree/master/recognition/arcface_torch), [SwinFace](https://github.com/lxq1000/SwinFace), [TransFace](https://github.com/DanJun6737/TransFace). These models should be saved inside a folder named `FR_models`
 
 # MAD Evaluation Models
-The weigths of the pre-trained MAD models used in this work can be downloaded through the following links: [SPL](https://github.com/meilfang/SPL-MAD), [MixFaceNet-MAD](https://github.com/naserdamer/SMDD-Synthetic-Face-Morphing-Attack-Detection-Development-dataset). These models should be saved inside the folders named `unsupervised_MAD` andf `supervised_MAD`, respectively.
+The weigths of the pre-trained MAD models used in this work can be downloaded through the following links: [SPL](https://github.com/meilfang/SPL-MAD), [MixFaceNet-MAD](https://github.com/naserdamer/SMDD-Synthetic-Face-Morphing-Attack-Detection-Development-dataset). These models should be saved inside the folders named `unsupervised_MAD` and `supervised_MAD`, respectively.
+
+# FIQA Evaluation Model
+The weights of CR-FIQA model can be downloaded [here](https://github.com/fdbtrs/cr-fiqa). This model should be saved inside the folders named `CR-FIQA`.
 
 ## How to Run?
 
