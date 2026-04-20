@@ -67,11 +67,11 @@ Run `CR-FIQA/getQualityScore.py` to extract the face image quality assessment me
    
 3. Run the MAD evaluations:
    
-  3.1. **SPL:** Alter the threshold values in `unsupervised_MAD/unsupervised_NAD.py` to the thresholds obtained for SPL in step 2.2 and run `unsupervised_MAD.sh` with `--method="eval"` to perform the MAD evaluation on SPL.
+   3.1. **SPL:** Alter the threshold values in `unsupervised_MAD/unsupervised_NAD.py` to the thresholds obtained for SPL in step 2.2 and run `unsupervised_MAD.sh` with `--method="eval"` to perform the MAD evaluation on SPL.
    
-  3.2. **MixFaceNet-MAD:** Alter the threshold and normalization statistics values in `supervised_MAD/main.py` to the values obtained for MixFaceNet-MAD in step 2.3 and run `supervised_MAD.sh` with `--method "eval"` to perform the MAD evaluation on MixFaceNet-MAD.
+   3.2. **MixFaceNet-MAD:** Alter the threshold and normalization statistics values in `supervised_MAD/main.py` to the values obtained for MixFaceNet-MAD in step 2.3 and run `supervised_MAD.sh` with `--method "eval"` to perform the MAD evaluation on MixFaceNet-MAD.
   
-  3.3. **MADPromptS:** Alter the threshold and normalization statistics values in `src/utils/utils.py` and `src/training/trainer.py`, respectively, to the values obtained for MADPromptS in step 2.4 and run `MAD_triggering.sh` with `--method "eval"` to perform the MAD evaluation on MADPromptS.
+   3.3. **MADPromptS:** Alter the threshold and normalization statistics values in `src/utils/utils.py` and `src/training/trainer.py`, respectively, to the values obtained for MADPromptS in step 2.4 and run `MAD_triggering.sh` with `--method "eval"` to perform the MAD evaluation on MADPromptS.
 
 ### Plots
 1. Alter the metric values in `plot.py` to the values obtained for FR evaluation and Δ, to obtain the first part of the joint visualization of IJB-C results.
