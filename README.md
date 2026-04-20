@@ -47,10 +47,13 @@ Run `CR-FIQA/getQualityScore.py` to extract the face image quality assessment me
 5. **MADPromptS:**
 
 # Plots
-1. Alter the metric values in `plot.py` to the values obtained for FR evaluation and `$Delta$`, to obtain the first part of the joint visualization of IJB-C results.
+1. Alter the metric values in `plot.py` to the values obtained for FR evaluation and Δ, to obtain the first part of the joint visualization of IJB-C results.
 2. Alter the metric values in `plot_MAD.py` to the values obtained for MAD evaluation, to obtain the second part of the joint visualization of IJB-C results.
 
 # Segmentation Methods Evaluation
+1. Run `unify_masks.py` to get the union of the GT masks representing different facial elements for each sample of the CelebAMask-HQ dataset.
+2. Run `get_test_celeb.py` to copy the test set of the CelebAMask-HQ dataset into a new folder.
+3. Run `segmentation/pipelines/demo/segmentation_eval.py` and `SAM/eval_sam.py` to obtain the evaluation results.
 
 ## Citation
 
