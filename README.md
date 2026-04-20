@@ -12,13 +12,22 @@ You can download the weights of the pre-trained models used for portrait segment
 **FRGCv2:** Since FRGCv2 contains several folders, the first step is to save all the images considered for the experiment in the same folder. Run `create_frgc_pairs.py` to create genuine and impostor pairs with FRGCv2 images, following the pairing protocol discribed in the paper.
 
 # Segmentation
-+ clean FRGCv2
+**FPN + ResNet50, SegFormer-B0, BiSeNetv2, DANet, Fast SCNN and FCN + MobileNetv2:** Run `segmentation/pipelines/demo/image_demo.py`. The segmentation network and the target dataset can be altered directly in `segmentation/pipelines/demo.sh`.
+
+**SAM:** Run `SAM/run_sam.py`. The target dataset and method can be selected directly in `run_sam.sh`. To follow the protocol described in the paper, the method should be set to `full_no_ctr` for FERET and IJB-C, and to `bb_extra` for FRGCv2. 
+
+# Alignment and MAD crop
+**FERET and FRGCv2:** Run `retinaface_alignment.py` to align the FERET, FRGCv2 and their segmented versions. This script also uses the bounding boxes extracted for each sample to perform the MAD crop. 
+
+**IJB-C:** Contrary to the other datasets, IJB-C does not need to be passed through RetinaFace, as the landmarks and bounding boxes coordinates are already provided in the dataset. While the alignment is directly performed during evaluation, it is still necessary to save the MAD-cropped version of the samples, by running  `MAD_crop_IJBC.py`. 
 
 # Face Image Quality Assessement
 
 # FR Evaluation
 
 # MAD Evaluation
+
+# Plots
 
 # Segmentation Methods Evaluation
 
