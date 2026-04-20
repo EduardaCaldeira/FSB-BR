@@ -32,10 +32,23 @@ You can download the weights of the pre-trained models used for portrait segment
    
 2. Set `--method eval` in `eval_FR.sh` to run `efficient_eval_FR.py` and get the FR evaluation results. Set `--method dist` in `eval_FR.sh` to run `efficient_eval_FR.py` and get the genuine and impostor scores distributions and metrics.
 
+**IJB-C:** Run `eval_ijbc.py`. The segmentation network and FR model used for extracting the embeddings can be altered in `runIJBEval.sh`.
+
 # Face Image Quality Assessement
+
+Run `CR-FIQA/getQualityScore.py` to extract the face image quality assessment metrics. The segmentation network and target dataset can be altered in `FIQA.sh`.
+
 # MAD Evaluation
 
+1. Run `MAD_format.py` to obtain the `.csv` file used as a reference during MAD. The segmentation network and target dataset can be altered in `MAD_format.sh`.
+2. !!! get thresholds
+3. **SPL**
+4. **MixFaceNet-MAD:**
+5. **MADPromptS:**
+
 # Plots
+1. Alter the metric values in `plot.py` to the values obtained for FR evaluation and `$Delta$`, to obtain the first part of the joint visualization of IJB-C results.
+2. Alter the metric values in `plot_MAD.py` to the values obtained for MAD evaluation, to obtain the second part of the joint visualization of IJB-C results.
 
 # Segmentation Methods Evaluation
 
