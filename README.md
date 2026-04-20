@@ -49,9 +49,9 @@ Run `CR-FIQA/getQualityScore.py` to extract the face image quality assessment me
 
    2.3. **MixFaceNet-MAD:**  Set `--method "threshold"` in `supervised_MAD.sh` and run to obtain the thresholds and normalization statistics for MixFaceNet-MAD.
 
-   2.4. **MADPromptS:** Set `--method "threshold"` in `MAD_triggering.sh` and run to obtain the thresholds and normalization statistics for MADPromptS.
+   2.4. **MADPromptS:** Set `--eval_method="threshold"` in `MAD_triggering.sh` and run to obtain the thresholds and normalization statistics for MADPromptS.
    
-4. Run the MAD evaluations:
+3. Run the MAD evaluations:
    
   3.1. **SPL:** Alter the threshold values in `unsupervised_MAD/unsupervised_NAD.py` to the thresholds obtained for SPL in step 2.2 and run `unsupervised_MAD.sh` with `--method="eval"` to perform the MAD evaluation on SPL.
    
